@@ -17,18 +17,30 @@ Reflection
 ---
 
 1. Describe the pipeline
+
     (1) Convert to gray scale
+    
     (2) Apply Gaussian smoothing
+    
     (3) Define parameters for Canny and apply
+    
     (4) Select the region of interest
+    
     (5) Hough line transformation
+    
     (6) Find the fit line via linear regression
+    
     (7) Draw lines
 
 2. Identify any shortcomings
+
     (1) When selecting the region of interest, the size parameter is hard coded.
+    
     (2) This pipeline works for two test videos, but fails when testing challenge videos.
+    
 3. Suggest possible improvements
+
     (1) Need to test more parameter setting to find a better combination.
+    
     (2) Instead of linear regression (first order), higher order (for curve line) may have a better performance.
 
